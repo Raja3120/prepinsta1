@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: rgb(38, 155, 27);
+    text-align: center;
+    cursor: pointer;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+
+}
+div{
+    div{
+
+        color: white;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        font-style: italic;
+    }
+}
+a{
+    color: rgb(222, 19, 19);
+    /* text-emphasis-color: white; */
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+.butt{
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 0%;
+    background-color: azure;
+}
