@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Day2.css">
 </head>
 <body>
+    <style>
+        table,td{
+            border: 2px solid;
+
+        }
+    </style>
     <h1>Table in HTML</h1>
-    <table>
-        
+    <table >
+        <thead>
+
+            <tr style="background-color: red;">
+    <th>Name</th>
+    <th style="background-color: red; color: white;">UID</th>
+    <th>Course Name</th>
+    <th>Marks</th>
+    <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+    <td>Peter</td>
+    <td `>48</td>
+    <td>FSD</td>
+    <td>100</td>
+    <td>123456</td>
+    
+            </tr>
+            <tr>
+                <td>Tony stark</td>
+                <td>67</td>
+                <td>Data Analytics</td>
+                <td rowspan="2">99</td>
+                <td>876543</td>
+            </tr>
+            <tr>
+                <td>Thor</td>
+                <td>34
+                </td>
+                <td>FSD</td>
+                <td>768973</td>
+    
+            </tr>
+    <tr>
+        <td>Batman</td>
+        <td>63</td>
+        <td>Cyber</td>
+        <td>100</td>
+        <td>897683</td>
+        </tbody>
+
+</tr>
+<tfoot>
+
+    <tr>
+        <td colspan="3">Total marks</td>
+    <td>398</td>
+    </tr>
+</tfoot>
     </table>
 </body>
 </html>
