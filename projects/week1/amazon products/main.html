@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .filters {
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        .filters h3 {
+            margin-top: 0;
+        }
+        .products {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h4 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .product-card .price {
+            font-size: 1.2em;
+            color: #b12704;
+        }
+        .filter-group {
+            margin-bottom: 20px;
+        }
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .filter-group input, .filter-group select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-group">
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home & Garden</option>
+                <option value="sports">Sports</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="price">Price Range</label>
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+        </div>
+        <div class="filter-group">
+            <button type="button" onclick="applyFilters()">Apply Filters</button>
+        </div>
+    </aside>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 1">
+            <h4>LG UHD 55inch TV</h4>
+            <p>This is a ultra High defibation Telivision</p>
+            <p class="price">Rs. 99099</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 2">
+            <h4>Crocs</h4>
+            <p>This is a black coloured crocs which is a special edition in the crocs</p>
+            <p class="price">Rs. 8999</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 3">
+            <h4>VGuard Stabilizer</h4>
+            <p>This is a VGuard Stabiler specially designed for the TV's AC's Refriderators etc,,</p>
+            <p class="price">Rs. 3429</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product 4">
+            <h4>Nike</h4>
+            <p>Nike Jordan Air</p>
+            <p class="price">Rs. 2499</p>
+        </div>
+        
+    </section>
+</div>
+
+<script>
+    function applyFilters() {
+        const category = document.getElementById('category').value;
+        const minPrice = document.getElementById('min-price').value;
+        const maxPrice = document.getElementById('max-price').value;
+
+        console.log(`Applying filters: Category=${category}, Min Price=${minPrice}, Max Price=${maxPrice}`);
+    }
+</script>
+
+</body>
+</html>
