@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+<style>
+    .demo{
+        width: 300px;
+        height: 100px;
+        background-color: blue;
+        /* transform: translate(100px,50px); */
+        /* transform: rotate(90deg); */
+        /* transform: skew(30deg); */
+        margin-left: 200px;
+        /* transition: transform 3s; */
+        transition-property: width;
+        transition-duration: 9ms;
+        transition-timing-function: ease-in-out;
+    }
+    .demo:hover{
+        transform: rotate(360);
+        width: 200px;
+        
+    }
+</style>
+</head>
+<body>
+    <h1>Transform in CSS</h1>
+    <div class="demo"></div>
+</body>
+</html>
