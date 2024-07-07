@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}        
+
+#pulsing-dots .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: pulse 0.6s infinite alternate;
+}
+
+#pulsing-dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#pulsing-dots .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Pulsing Dots</h1>
+    
+    <div class="loader" id="pulsing-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+</body>
+</html>

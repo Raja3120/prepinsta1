@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animations</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.loader {
+    margin: 20px 0;
+}
+
+/* Bouncing Balls Loader */
+#bouncing-balls .ball {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+#bouncing-balls .ball:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#bouncing-balls .ball:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Bouncing Balls</h1>
+    <div class="loader" id="bouncing-balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+
+   
+
+   
+
+  
+</body>
+</html>
