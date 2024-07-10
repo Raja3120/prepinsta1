@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>output methods in JS</h1>
+    <p id="demo"></p>
+    <script>
+        // a=9;
+        // b=1;
+
+        // console.log("sum is ",a+b);
+// document.getElementById('demo').textContent='hii';
+// difference between innerhtml and text content
+// alert('do you want to continue');
+// confirm('Do you want to continue?')
+// prompt("Enter your Name?")
+
+// if(confirm("Do you want to continue?")){
+
+//     document.getElementById('demo').innerHTML="<h1>Correct"
+// }
+// else{
+//     document.getElementById('demo').innerHTML="<h1>Incorrect"
+// }
+let name=prompt("enter your avatar name");
+if(name){
+    document.getElementById('demo').textContent="Your name is "+name;
+}
+else{
+    document.getElementById('demo').textContent="enter your name"
+}
+    </script>
+</body>
+</html>
